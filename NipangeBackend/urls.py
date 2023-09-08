@@ -8,5 +8,4 @@ urlpatterns = [
     path('api/group/',include('groups.urls'),name='groups'),
     path('api/purchase/',include('purchaseairtime.urls'),name='purchases'),
     path('api/payment/',include('payments.urls')),
-    path('',include('images.urls'))
 ]

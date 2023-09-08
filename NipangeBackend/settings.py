@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2wxf1m%wa^*km^!ul+y$iliafh#_tf^-q*en)ejf!d72g$&t4$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'groups',
     'purchaseairtime',
     'payments',
-    'images',
 
     # custom apps
     'rest_framework',
@@ -89,11 +88,11 @@ WSGI_APPLICATION = 'NipangeBackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Nipange',
-        'PORT':'3306',
-        'PASSWORD':'',
-        'USER':'root',
-        'HOST': 'localhost'
+        'NAME': 'defaultdb',
+        'PORT':'20128',
+        'PASSWORD':'AVNS_FVDiY4S4fYtTYqyTfj7',
+        'USER':'avnadmin',
+        'HOST': 'nipange-nipange.aivencloud.com'
     }
 }
 
